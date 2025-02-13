@@ -1,0 +1,607 @@
+// تعریف یک Mixin برای Media Queryهای مختلف
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==laptap {
+        @media screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==tablet {
+        @media screen and (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==mobile {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==small-mobile {
+        @media screen and (max-width: 480px) {
+            @content;
+        }
+    }
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+img {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    background-color: #f8f9fa;
+
+}
+
+#contact_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f9fa;
+    width: 100%;
+
+    @include responsive(mobile) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
+
+#address,
+#phone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #2A2F71;
+
+    @include responsive(mobile) {
+        font-size: 1rem;
+    }
+}
+
+#address {
+    @include responsive(mobile) {
+        display: none;
+    }
+}
+
+
+#address p,
+#phone p {
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+
+}
+
+
+#address i,
+#phone i {
+    margin: 0;
+    padding-right: .5rem;
+}
+
+
+#logo img {
+    width: 16rem;
+    height: 100%;
+
+    @include responsive(mobile) {
+        width: 12rem;
+    }
+
+    @include responsive(small-mobile) {
+        width: 10rem;
+    }
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #f8f9fa;
+
+    @include responsive(mobile) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+
+#menu a {
+    margin: 0 1rem;
+    color: #2A2F71;
+    font-size: 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+
+#about_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+
+    @include responsive(tablet) {
+        padding: 2rem 5rem;
+    }
+
+
+    @include responsive(mobile) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+#about_img img {
+    // height: 100%;
+    width: 20rem;
+
+    @include responsive(mobile) {
+        width: 100%;
+    }
+}
+
+#about_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-right: 1rem;
+
+    @include responsive(mobile) {
+        width: 100%;
+    }
+}
+
+#about_content h1 {
+    font-size: 2rem;
+    color: #2A2F71;
+    padding: 1rem 0;
+
+    @include responsive(mobile) {
+        font-size: 1.5rem;
+    }
+}
+
+#about_content h3 {
+    font-size: 1.5rem;
+    color: #2A2F71;
+
+    @include responsive(mobile) {
+        font-size: 1.5rem;
+    }
+}
+
+
+#about_content p {
+    font-size: 1.1rem;
+    color: #69696c;
+    padding: 1rem 0;
+    text-align: justify;
+
+    @include responsive(mobile) {
+        font-size: 1rem;
+    }
+
+    @include responsive(tablet) {
+        padding-right: 1rem;
+    }
+
+
+}
+
+#about_content a {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #2A2F71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+
+    @include responsive(mobile) {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+
+    @include responsive(mobile) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313244;
+    padding: 2rem 10rem;
+
+    @include responsive(mobile) {
+        padding: 2rem 2rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    @include responsive(tablet) {
+        padding: 2rem 2rem;
+
+    }
+}
+
+
+
+#projects_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+
+    @include responsive(mobile) {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    @include responsive(tablet) {
+        // padding: 2rem 5rem;
+        width: 100%;
+
+    }
+
+}
+
+#projects h1 {
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+
+    @include responsive(mobile) {
+        font-size: 1.5rem;
+    }
+}
+
+#projects h3 {
+    color: white;
+    font-size: 1.5rem;
+
+    @include responsive(mobile) {
+        font-size: 1.5rem;
+    }
+}
+
+#projects p {
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    text-align: justify;
+
+    @include responsive(mobile) {
+        font-size: 1rem;
+    }
+}
+
+#projects_button {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem 0;
+    width: 50%;
+    position: relative;
+
+    @include responsive(mobile) {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+#projects_button button {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #2a2f7100;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#projects_button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0rem;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s ease;
+    z-index: 0;
+}
+
+#projects_button:hover::before {
+    width: 30%;
+
+    @include responsive(tablet) {
+        width: 50%;
+
+    }
+
+    @include responsive(mobile) {
+        width: 100%;
+
+    }
+}
+
+
+#projects_example_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem 0 5rem 0;
+    background-color: #313244;
+    ;
+
+    @include responsive(mobile) {
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    @include responsive(tablet) {
+        flex-direction: column;
+        text-align: center;
+
+    }
+}
+
+#projects_example_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+    @include responsive(tablet) {
+        width: 85%;
+    }
+
+    @include responsive(mobile) {
+        width: 65%;
+    }
+}
+
+#projects_example_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    text-align: justify;
+    color: #C4C3C3;
+    text-decoration: none;
+    padding: .5rem 0;
+
+
+    @include responsive(mobile) {
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+#projects_example_detail a {
+    color: #C4C3C3;
+    text-decoration: none;
+    background-color: #2A2F71;
+    padding: 1rem 1.2rem;
+    border-radius: 1.2rem;
+    font-size: 1rem;
+
+    @include responsive(tablet) {
+        font-size: 1.5rem;
+    }
+
+    @include responsive(mobile) {
+        font-size: 1.2rem;
+    }
+}
+
+#projects_example_detail a:hover {
+    color: white;
+}
+
+
+
+
+#projects_example_content img {
+    width: 100%;
+    filter: brightness(0.8);
+    /* تصویر را کمی تیره‌تر می‌کند */
+    transition: filter 0.3s ease;
+    /* ایجاد افکت نرم تغییر */
+
+    @include responsive(mobile) {
+        width: 100%;
+    }
+}
+
+#projects_example_content h3 {
+    color: #C4C3C3;
+    font-size: 1rem;
+    padding: 1rem 0;
+
+    @include responsive(mobile) {
+        font-size: 1.5rem;
+    }
+
+    @include responsive(tablet) {
+        font-size: 1.5rem;
+    }
+}
+
+#projects_example_content h3:hover {
+    color: white;
+}
+
+#projects_example_content img:hover {
+    filter: brightness(1);
+    /* هنگام هاور، تصویر روشن‌تر می‌شود */
+}
+
+
+
+#services_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem 5rem;
+
+    @include responsive(mobile) {
+        padding: 2rem 2rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    @include responsive(tablet) {
+        padding: 2rem 2rem;
+
+    }
+}
+
+#services_content h1 {
+    color: #2A2F71;
+    font-size: 2rem;
+    padding: 1rem 0;
+
+    @include responsive(mobile) {
+        font-size: 1.5rem;
+    }
+}
+
+#description_service {
+    color: #636363;
+    font-size: 1.1rem;
+    width: 55%;
+    text-align: justify;
+
+    @include responsive(mobile) {
+        // font-size: 1.5rem;
+    }
+}
+
+#services_carts {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem 0 5rem 0;
+    color: #2A2F71;
+    ;
+
+    @include responsive(mobile) {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    @include responsive(tablet) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+
+    }
+}
+
+#services_cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 2rem;
+    border: #2A2F71 solid 1px;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    clip-path: polygon(0% 0%, 40% 0%, 40% 5%, 60% 5%, 60% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+
+    @include responsive(tablet) {
+        width: 85%;
+    }
+
+    @include responsive(mobile) {
+        width: 65%;
+    }
+}
+
+#servic_icon {
+    font-size: 6rem;
+
+}
+
+#services_cart p {
+    color: #636363;
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: justify;
+
+    @include responsive(mobile) {}
+}

@@ -1,0 +1,156 @@
+// تعریف یک Mixin برای Media Queryهای مختلف
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==laptap {
+        @media screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==tablet {
+        @media screen and (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==mobile {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==small-mobile {
+        @media screen and (max-width: 480px) {
+            @content;
+        }
+    }
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+img {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+#footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: #F8F9FA;
+
+    @include responsive(mobile) {
+        padding: 2rem 2rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    @include responsive(tablet) {
+        padding: 2rem 2rem;
+
+    }
+}
+#footer_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    @include responsive(mobile) {
+        flex-direction: column;
+        text-align: center;
+    }
+    @include responsive(tablet) {
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+    }
+
+}
+
+
+
+#footer_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+
+    @include responsive(mobile) {
+        width: 100%;
+    }
+
+    @include responsive(tablet) {
+        width: 45%;
+    }
+}
+
+#footer_logo img {
+    width: 16rem;
+    height: 100%;
+
+    @include responsive(mobile) {
+        width: 12rem;
+    }
+
+    @include responsive(small-mobile) {
+        width: 10rem;
+    }
+}
+
+
+
+#footer_address,
+#footer_phone,
+#footer_email {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: 1.2rem;
+    width: 25%;
+
+    color: #2A2F71;
+
+    @include responsive(mobile) {
+        font-size: 1rem;
+        width: 100%;
+    }
+    @include responsive(tablet) {
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+#footer_coppright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: #F8F9FA;
+    padding: 2rem 0;
+
+
+    @include responsive(mobile) {
+        padding: 2rem 0;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+
+
+    @include responsive(mobile) {
+        font-size: 1rem;
+    }
+}

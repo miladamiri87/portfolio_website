@@ -1,0 +1,84 @@
+body,p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    background-color: #f8f9fa;
+
+}
+
+#contact_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    width: 100%;
+
+
+}
+
+#address,
+#phone {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #2A2F71;
+}
+
+#address p,#phone p {
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+
+}
+
+
+#address i,#phone i {
+    margin: 0;
+    padding-right: .5rem;
+}
+
+
+#logo img {
+    width: 16rem;
+    height: 100%;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: center; /* وسط‌چین کردن به صورت افقی */
+    align-items: center; /* وسط‌چین کردن به صورت عمودی */
+    width: 100%; /* عرض ۱۰۰ درصد */
+    padding: 1rem 0; /* فاصله برای زیبایی */
+    background-color: #f8f9fa;
+    
+}
+
+
+#menu a {
+    margin: 0 1rem;
+    color: #2A2F71;
+    font-size: 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
