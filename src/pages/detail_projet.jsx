@@ -21,7 +21,7 @@ import project_detail_img10 from '../assets/kowsar/24-12-99.mp4'; // import کر
 
 // project_detail_img funzon
 
-import project_detail_img_funzone1 from '../assets/funzone/_MG_9646.JPG'; // import کردن تصویر
+import project_detail_img_funzone1 from '../assets/funzone/_MG_9646.jpg'; // import کردن تصویر
 import project_detail_img_funzone2 from '../assets/funzone/_MG_9652.JPG'; // import کردن تصویر
 import project_detail_img_funzone3 from '../assets/funzone/C0010S03.MP4'; // import کردن تصویر
 import project_detail_img_funzone4 from '../assets/funzone/C0053S03.MP4'; // import کردن تصویر
