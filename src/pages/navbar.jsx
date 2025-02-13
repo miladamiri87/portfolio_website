@@ -14,7 +14,7 @@ function Navbar({ scrollToServices }) {
 
         if (location.pathname !== "/") {
             // اگر در صفحه جزئیات هستیم، اول به Home برو و بعد اسکرول کن
-            navigate("/");
+            navigate("/portfolio_website");
             setTimeout(() => {
                 if (scrollToServices.current) {
                     scrollToServices.current();
