@@ -21,8 +21,7 @@ import project_detail_img10 from '../assets/kowsar/24-12-99.mp4'; // import کر
 
 // project_detail_img funzon
 
-import project_detail_img_funzone1 from '../assets/funzone/_MG_9646.jpg'; // import کردن تصویر
-import project_detail_img_funzone2 from '../assets/funzone/_MG_9652.JPG'; // import کردن تصویر
+
 import project_detail_img_funzone3 from '../assets/funzone/C0010S03.MP4'; // import کردن تصویر
 import project_detail_img_funzone4 from '../assets/funzone/C0053S03.MP4'; // import کردن تصویر
 import project_detail_img_funzone5 from '../assets/funzone/C0077S03.MP4'; // import کردن تصویر
@@ -31,21 +30,7 @@ import project_detail_img_funzone7 from '../assets/funzone/C0104S03.MP4'; // imp
 import project_detail_img_funzone8 from '../assets/funzone/C0088S03.MP4'; // import کردن تصویر
 import project_detail_img_funzone9 from '../assets/funzone/C0115S03.MP4'; // import کردن تصویر
 import project_detail_img_funzone10 from '../assets/funzone/C0118S03.MP4'; // import کردن تصویر
-import project_detail_img_funzone11 from '../assets/funzone/C0152S03.MP4'; // import کردن تصویر
-import project_detail_img_funzone12 from '../assets/funzone/_MG_9666.JPG'; // import کردن تصویر
-import project_detail_img_funzone13 from '../assets/funzone/_MG_9670.JPG'; // import کردن تصویر
-import project_detail_img_funzone14 from '../assets/funzone/_MG_9676.JPG'; // import کردن تصویر
-import project_detail_img_funzone15 from '../assets/funzone/_MG_9682.JPG'; // import کردن تصویر
-import project_detail_img_funzone16 from '../assets/funzone/_MG_9693.JPG'; // import کردن تصویر
-import project_detail_img_funzone17 from '../assets/funzone/_MG_9705.JPG'; // import کردن تصویر
-import project_detail_img_funzone18 from '../assets/funzone/_MG_9717.JPG'; // import کردن تصویر
-import project_detail_img_funzone19 from '../assets/funzone/_MG_9728.JPG'; // import کردن تصویر
-import project_detail_img_funzone20 from '../assets/funzone/_MG_9733.JPG'; // import کردن تصویر
-import project_detail_img_funzone21 from '../assets/funzone/_MG_9754.JPG'; // import کردن تصویر
-import project_detail_img_funzone22 from '../assets/funzone/_MG_9764.JPG'; // import کردن تصویر
-import project_detail_img_funzone23 from '../assets/funzone/_MG_9802.JPG'; // import کردن تصویر
-import project_detail_img_funzone24 from '../assets/funzone/_MG_9812.JPG'; // import کردن تصویر
-import project_detail_img_funzone25 from '../assets/funzone/_MG_9817.JPG'; // import کردن تصویر
+import project_detail_img_funzone11 from '../assets/funzone/C0152S03.MP4'; // import کردن تصویرس
 import project_detail_img_funzone26 from '../assets/funzone/C0193S03.MP4'; // import کردن تصویر
 
 // project_detail_img nilu
@@ -60,8 +45,45 @@ import project_detail_img_nilu39 from '../assets/nilofar/39.jpg'; // import کر
 import project_detail_img_nilu40 from '../assets/nilofar/40.jpg'; // import کردن تصویر
 
 
+// Coffe
+import project_detail_img_coffe01 from '../assets/custle/promo padideh 2.mp4'; // import کردن تصویر
+import project_detail_img_01 from '../assets/custle/01 (1).jpg';
+import project_detail_img_02 from '../assets/custle/01 (2).JPG';
+import project_detail_img_03 from '../assets/custle/01 (3).JPG';
+import project_detail_img_04 from '../assets/custle/01 (4).JPG';
+import project_detail_img_05 from '../assets/custle/01 (5).JPG';
+import project_detail_img_06 from '../assets/custle/01 (6).JPG';
+import project_detail_img_07 from '../assets/custle/01 (7).JPG';
+import project_detail_img_08 from '../assets/custle/01 (8).JPG';
+import project_detail_img_09 from '../assets/custle/01 (9).JPG';
+import project_detail_img_10 from '../assets/custle/01 (10).jpg';
+import project_detail_img_11 from '../assets/custle/01 (11).jpg';
+import project_detail_img_12 from '../assets/custle/01 (12).jpg';
+import project_detail_img_13 from '../assets/custle/01 (13).jpg';
+import project_detail_img_14 from '../assets/custle/01 (14).jpg';
+import project_detail_img_15 from '../assets/custle/01 (15).jpg';
+import project_detail_img_16 from '../assets/custle/01 (16).jpg';
+import project_detail_img_17 from '../assets/custle/01 (17).jpg';
+import project_detail_img_18 from '../assets/custle/01 (18).jpg';
+import project_detail_img_19 from '../assets/custle/01 (19).jpg';
+import project_detail_img_20 from '../assets/custle/01 (20).jpg';
+import project_detail_img_21 from '../assets/custle/01 (21).jpg';
+import project_detail_img_22 from '../assets/custle/01 (22).jpg';
+import project_detail_img_23 from '../assets/custle/01 (23).jpg';
+import project_detail_img_24 from '../assets/custle/01 (24).jpg';
+import project_detail_img_25 from '../assets/custle/01 (25).JPG';
+import project_detail_img_26 from '../assets/custle/01 (26).jpg';
+import project_detail_img_27 from '../assets/custle/01 (27).JPG';
 
 
+// ferdowsi
+
+
+import project_detail_ferdosi from '../assets/ferdowsi/14.mp4';
+import project_detail_ferdosi2 from '../assets/ferdowsi/3.jpg';
+import project_detail_ferdosi3 from '../assets/ferdowsi/2.png';
+
+import project_detail_vila from '../assets/vila/23-1-1400 (1).mp4';
 
 
 
@@ -152,6 +174,79 @@ export default function Detail_project() {
                 project_detail_img_nilu38,
                 project_detail_img_nilu39,
                 project_detail_img_nilu40
+            ]
+        }
+        , {
+            "id": "4",
+            "type_project": "Design & Renovation Coffe",
+            "name_project": "Health Museum Café",
+            "role_project": " My role was to design and oversee the renovation of the Health Museum Café.",
+            "description_project": "The project involved adding a mezzanine floor and creating a bridge to enhance the added value, offering an excellent view of the surroundings. A mix of industrial and modern elements was incorporated to create a dynamic design. Elements like light, water, and trees were added to enrich the project’s atmosphere. Using Grasshopper software, ceiling voids were modeled to maximize natural light throughout the year. The design also focused on preserving previous elements of the project to maintain social sustainability.",
+            "project_intro_img": "/assets/custle/intor.jpg",
+            "year_project": 2015,
+            "location_project": "Mashhad, Iran",
+            "area_project": "1,000 sqm",
+            "project_detail_img": [
+                project_detail_img_coffe01,
+                project_detail_img_01,
+                project_detail_img_02,
+                project_detail_img_03,
+                project_detail_img_04,
+                project_detail_img_05,
+                project_detail_img_06,
+                project_detail_img_07,
+                project_detail_img_08,
+                project_detail_img_09,
+                project_detail_img_10,
+                project_detail_img_11,
+                project_detail_img_12,
+                project_detail_img_13,
+                project_detail_img_14,
+                project_detail_img_15,
+                project_detail_img_16,
+                project_detail_img_17,
+                project_detail_img_18,
+                project_detail_img_19,
+                project_detail_img_20,
+                project_detail_img_21,
+                project_detail_img_22,
+                project_detail_img_23,
+                project_detail_img_24,
+                project_detail_img_25,
+                project_detail_img_26,
+                project_detail_img_27
+
+            ]
+        },
+        {
+            "id": "5",
+            "type_project": "Architectural Design",
+            "name_project": "Office & Commercial Building",
+            "role_project": " The architectural design blends traditional and modern styles, combining heritage with innovation.",
+            "description_project": "The project was designed with a view of the garden, blending traditional architecture with inspiration from modern design based on the client's request. It includes the facade, office floors, commercial spaces, and the boardroom. Detailed phase two drawings have been provided to the client, ensuring the design captures both the aesthetic and functional needs while respecting the traditional elements and incorporating modern architectural principles.",
+            "project_intro_img": "/assets/ferdowsi/1.jpg",
+            "year_project": 2015,
+            "location_project": "Mashhad, Iran",
+            "area_project": "4,500 sqm",
+            "project_detail_img": [
+                project_detail_ferdosi,
+                project_detail_ferdosi2,
+                project_detail_ferdosi3
+            ]
+        }
+        ,
+        {
+            "id": "6",
+            "type_project": "Villa Complex Design",
+            "name_project": "Ferdowsi Villa",
+            "role_project": " Our role was the design of a modern villa complex with interior design, facade, and landscape.",
+            "description_project": "The client requested a complete design for a villa, including both the interior and exterior spaces, as well as landscape design. The villa was to be designed in a modern style, reflecting contemporary architectural trends. The design aimed to create a seamless flow between the indoor and outdoor spaces, with careful attention to the surrounding landscape to enhance the villa's overall aesthetic. Every aspect of the design, from the facade to the interior layout, was planned to ensure a harmonious, modern living environment.",
+            "project_intro_img": "/assets/vila/1.jpg",
+            "year_project": 2015,
+            "location_project": "Mashhad, Iran",
+            "area_project": "4,500 sqm",
+            "project_detail_img": [
+                project_detail_vila
             ]
         }
     ]
