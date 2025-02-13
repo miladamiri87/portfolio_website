@@ -27,7 +27,7 @@ const Home = ({ scrollToServices }) => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
         console.log('در حال تلاش برای بارگذاری JSON...');
-        fetch("/projects.json")
+        fetch("/static/projects.json")
             .then((res) => {
                 console.log('پاسخ دریافت شد:', res);
                 if (!res.ok) {
