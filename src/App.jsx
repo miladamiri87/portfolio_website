@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Navbar scrollToServices={scrollToServices} />
       <Routes>
-        <Route path="/" element={<Home scrollToServices={scrollToServices} />} />
+        <Route path="/portfolio_website" element={<Home scrollToServices={scrollToServices} />} />
         <Route path="/detail_project/:id" element={<Detail_project />} />
         <Route path="/all_projects" element={<All_projects />} />
         <Route path="/about" element={<About />} />
