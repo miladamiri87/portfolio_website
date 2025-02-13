@@ -128,8 +128,7 @@ export default function Detail_project() {
             "location_project": "Mashhad, Iran",
             "area_project": "7,500 sqm",
             "project_detail_img": [
-                project_detail_img_funzone1,
-                project_detail_img_funzone2,
+                
                 project_detail_img_funzone3,
                 project_detail_img_funzone4,
                 project_detail_img_funzone5,
@@ -139,20 +138,6 @@ export default function Detail_project() {
                 project_detail_img_funzone9,
                 project_detail_img_funzone10,
                 project_detail_img_funzone11,
-                project_detail_img_funzone12,
-                project_detail_img_funzone13,
-                project_detail_img_funzone14,
-                project_detail_img_funzone15,
-                project_detail_img_funzone16,
-                project_detail_img_funzone17,
-                project_detail_img_funzone18,
-                project_detail_img_funzone19,
-                project_detail_img_funzone20,
-                project_detail_img_funzone21,
-                project_detail_img_funzone22,
-                project_detail_img_funzone23,
-                project_detail_img_funzone24,
-                project_detail_img_funzone25,
                 project_detail_img_funzone26
             ]
         },
