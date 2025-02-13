@@ -48,7 +48,7 @@ function Navbar({ scrollToServices }) {
                 </div>
             </div>
             <div id='menu'>
-                <Link to="/">Home</Link>
+                <Link to="/portfolio_website">Home</Link>
                 <a href="#" onClick={handleScrollToServices}>Services</a>
                 <Link to="/all_projects">All Projects</Link>
                 <Link to="/about">About</Link>
