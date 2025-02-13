@@ -12,7 +12,7 @@ function Navbar({ scrollToServices }) {
     const handleScrollToServices = (e) => {
         e.preventDefault(); // جلوگیری از تغییر صفحه ناخواسته
 
-        if (location.pathname !== "/") {
+        if (location.pathname !== "/portfolio_website") {
             // اگر در صفحه جزئیات هستیم، اول به Home برو و بعد اسکرول کن
             navigate("/portfolio_website");
             setTimeout(() => {
@@ -52,7 +52,6 @@ function Navbar({ scrollToServices }) {
                 <a href="#" onClick={handleScrollToServices}>Services</a>
                 <Link to="/all_projects">All Projects</Link>
                 <Link to="/about">About</Link>
-                {/* <Link to="/contact">Contact</Link> */}
 
 
             </div>
