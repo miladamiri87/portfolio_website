@@ -14,7 +14,7 @@ function App() {
   const scrollToServices = useRef(null);
 
   return (
-    <Router>
+    <Router basename="/portfolio_website">
       <Navbar scrollToServices={scrollToServices} />
       <Routes>
         <Route path="/portfolio_website" element={<Home scrollToServices={scrollToServices} />} />
