@@ -19,11 +19,11 @@ const Footer = () => {
                     </div>
                     <div id='footer_phone'>
                         <h3>Phone</h3>
-                        <p>(+1) 647-381-6883</p>
+                        <p>(+1) 647-229-8463</p>
                     </div>
                     <div id='footer_email'>
                         <h3>Email</h3>
-                        <p>miladamiri87@gmail.com</p>
+                        <p>forooghzaman68@gmail.com</p>
                     </div>
                 </div>
             </div>
