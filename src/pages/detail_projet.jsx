@@ -5,6 +5,9 @@ import '../assets/Styles/responsive-page-detail-project-break_point.scss';
 import projectImage1 from '../assets/kowsar/Enscape_2021-12-22-19-25-10-Photoroom.jpg'; // import کردن تصویر
 import projectImage2 from '../assets/funzone/intro.jpg'; // import کردن تصویر
 import projectImage3 from '../assets/nilofar/intro.jpg'; // import کردن تصویر
+import projectImage4 from '../assets/custle/0.jpg'; // import کردن تصویر
+import projectImage5 from '../assets/ferdowsi/1.jpg'; // import کردن تصویر
+import projectImage6 from '../assets/vila/1.jpg'; // import کردن تصویر
 
 // project_detail_img kowsar
 
@@ -167,7 +170,7 @@ export default function Detail_project() {
             "name_project": "Health Museum Café",
             "role_project": " My role was to design and oversee the renovation of the Health Museum Café.",
             "description_project": "The project involved adding a mezzanine floor and creating a bridge to enhance the added value, offering an excellent view of the surroundings. A mix of industrial and modern elements was incorporated to create a dynamic design. Elements like light, water, and trees were added to enrich the project’s atmosphere. Using Grasshopper software, ceiling voids were modeled to maximize natural light throughout the year. The design also focused on preserving previous elements of the project to maintain social sustainability.",
-            "project_intro_img": "/assets/custle/intor.jpg",
+            "project_intro_img":  projectImage4,
             "year_project": 2015,
             "location_project": "Mashhad, Iran",
             "area_project": "1,000 sqm",
@@ -209,7 +212,7 @@ export default function Detail_project() {
             "name_project": "Office & Commercial Building",
             "role_project": " The architectural design blends traditional and modern styles, combining heritage with innovation.",
             "description_project": "The project was designed with a view of the garden, blending traditional architecture with inspiration from modern design based on the client's request. It includes the facade, office floors, commercial spaces, and the boardroom. Detailed phase two drawings have been provided to the client, ensuring the design captures both the aesthetic and functional needs while respecting the traditional elements and incorporating modern architectural principles.",
-            "project_intro_img": "/assets/ferdowsi/1.jpg",
+            "project_intro_img":  projectImage5,
             "year_project": 2015,
             "location_project": "Mashhad, Iran",
             "area_project": "4,500 sqm",
@@ -226,7 +229,7 @@ export default function Detail_project() {
             "name_project": "Ferdowsi Villa",
             "role_project": " Our role was the design of a modern villa complex with interior design, facade, and landscape.",
             "description_project": "The client requested a complete design for a villa, including both the interior and exterior spaces, as well as landscape design. The villa was to be designed in a modern style, reflecting contemporary architectural trends. The design aimed to create a seamless flow between the indoor and outdoor spaces, with careful attention to the surrounding landscape to enhance the villa's overall aesthetic. Every aspect of the design, from the facade to the interior layout, was planned to ensure a harmonious, modern living environment.",
-            "project_intro_img": "/assets/vila/1.jpg",
+            "project_intro_img": projectImage6,
             "year_project": 2015,
             "location_project": "Mashhad, Iran",
             "area_project": "4,500 sqm",
