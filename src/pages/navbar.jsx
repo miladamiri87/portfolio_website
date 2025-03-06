@@ -43,7 +43,7 @@ function Navbar({ scrollToServices }) {
                 </div>
                 <div id='phone'>
                     <span><i className='bx bxs-phone-call' ></i></span>
-                    <p>(+1) 647-381-6883</p>
+                    <p>(+1) 647-229-8463</p>
 
                 </div>
             </div>
@@ -52,7 +52,6 @@ function Navbar({ scrollToServices }) {
                 <a href="#" onClick={handleScrollToServices}>Services</a>
                 <Link to="/all_projects">All Projects</Link>
                 <Link to="/about">About</Link>
-
 
             </div>
 
